@@ -13,3 +13,7 @@ unsigned int horse( const string from, const string to) {
     return 0;
 }
 
+unsigned int islands(const vector<vector<int>>& g) {
+    return 0;
+}
+

@@ -31,3 +31,28 @@ TEST_CASE( "2: BFS" ) {
 TEST_CASE( "3: Horse" ) {
     REQUIRE( horse("A1", "B3") == 1 );
 }
+
+TEST_CASE( "4: Island" ) {
+	vector<vector<int>> zeroIslands =
+    {
+        { 0, 0, 0},
+        { 0, 0, 0}
+    };
+	REQUIRE( islands(zeroIslands) == 0 );
+	vector<vector<int>> moreIslands =
+    {
+        { 1, 0, 1},
+        { 0, 1, 0}
+    };
+	REQUIRE( islands(zeroIslands) == 3 );
+	vector<vector<int>> moreIslands1 =
+    {
+        { 1, 0, 1},
+	    { 0, 0, 0},
+		{ 0, 1, 1},
+		{ 1, 0, 0},
+		{ 1, 0, 1},
+		{ 1, 0, 0}
+    };
+	REQUIRE( islands(moreIslands1) == 5 );
+}
