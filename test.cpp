@@ -44,15 +44,15 @@ TEST_CASE( "4: Island" ) {
         { 1, 0, 1},
         { 0, 1, 0}
     };
-	REQUIRE( islands(zeroIslands) == 3 );
+	REQUIRE( islands(moreIslands) == 3 );
 	vector<vector<int>> moreIslands1 =
     {
         { 1, 0, 1},
-	    { 0, 0, 0},
-		{ 0, 1, 1},
-		{ 1, 0, 0},
-		{ 1, 0, 1},
-		{ 1, 0, 0}
+	{ 0, 0, 0},
+	{ 0, 1, 1},
+	{ 1, 0, 0},
+	{ 1, 0, 1},
+	{ 1, 0, 0}
     };
 	REQUIRE( islands(moreIslands1) == 5 );
 }
